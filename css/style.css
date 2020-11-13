@@ -4,7 +4,82 @@
 }
 .nav a {
   color: #333;
+  padding: 8px 13px;
+  margin: 0 5px;
+  background: #efefef;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.nav a:hover {
+  color: #1593ad;
 }
 .article img {
   margin: 0 auto;
+  display: table-cell;
+  text-align: center;
+}
+#header-desktop {
+  display: block;
+  position: fixed;
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+header {
+  width: 100%;
+  z-index: 150;
+  background-color: #f8f8f8;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+#header-desktop .header-wrapper {
+  padding: 0 2rem 0 10vh;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+header {
+  display: block;
+}
+#header-desktop .header-wrapper .header-title {
+  font-size: 1.5rem;
+}
+.header-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei UI, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  min-width: 10%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-flex: 10;
+  flex: 10;
+}
+header a {
+  text-decoration: none;
+  color: #161209;
+}
+#header-desktop .header-wrapper .menu {
+  overflow: hidden;
+  white-space: nowrap;
+}
+#header-desktop .header-wrapper .menu .menu-inner {
+  float: right;
+}
+#header-desktop .header-wrapper .menu .menu-item {
+  margin: 0 0.5rem;
+}
+.menu .menu-item {
+  position: relative;
+}
+.menu a.menu-item {
+  font-size: 1.1rem;
+}
+.archive_part a {
+  color: #111;
 }
